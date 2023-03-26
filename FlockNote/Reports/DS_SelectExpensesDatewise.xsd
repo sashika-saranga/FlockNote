@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_SelectExpensesDatewise" targetNamespace="http://tempuri.org/DS_SelectExpensesDatewise.xsd" xmlns:mstns="http://tempuri.org/DS_SelectExpensesDatewise.xsd" xmlns="http://tempuri.org/DS_SelectExpensesDatewise.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FlockNoteConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FlockNoteConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FlockNote.Properties.Settings.GlobalReference.Default.FlockNoteConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_SelectExpensesDatewise" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_SelectExpensesDatewise" msprop:Generator_UserDSName="DS_SelectExpensesDatewise">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SP_SelectExpenceDatewise" msprop:Generator_TableClassName="SP_SelectExpenceDatewiseDataTable" msprop:Generator_TableVarName="tableSP_SelectExpenceDatewise" msprop:Generator_TablePropName="SP_SelectExpenceDatewise" msprop:Generator_RowDeletingName="SP_SelectExpenceDatewiseRowDeleting" msprop:Generator_RowChangingName="SP_SelectExpenceDatewiseRowChanging" msprop:Generator_RowEvHandlerName="SP_SelectExpenceDatewiseRowChangeEventHandler" msprop:Generator_RowDeletedName="SP_SelectExpenceDatewiseRowDeleted" msprop:Generator_UserTableName="SP_SelectExpenceDatewise" msprop:Generator_RowChangedName="SP_SelectExpenceDatewiseRowChanged" msprop:Generator_RowEvArgName="SP_SelectExpenceDatewiseRowChangeEvent" msprop:Generator_RowClassName="SP_SelectExpenceDatewiseRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ExpencesID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnExpencesID" msprop:Generator_ColumnPropNameInRow="ExpencesID" msprop:Generator_ColumnPropNameInTable="ExpencesIDColumn" msprop:Generator_UserColumnName="ExpencesID" type="xs:int" />
+              <xs:element name="ExpencesTypes" msprop:Generator_ColumnVarNameInTable="columnExpencesTypes" msprop:Generator_ColumnPropNameInRow="ExpencesTypes" msprop:Generator_ColumnPropNameInTable="ExpencesTypesColumn" msprop:Generator_UserColumnName="ExpencesTypes" type="xs:int" minOccurs="0" />
+              <xs:element name="type" msprop:Generator_ColumnVarNameInTable="columntype" msprop:Generator_ColumnPropNameInRow="type" msprop:Generator_ColumnPropNameInTable="typeColumn" msprop:Generator_UserColumnName="type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:double" minOccurs="0" />
+              <xs:element name="PaymentType" msprop:Generator_ColumnVarNameInTable="columnPaymentType" msprop:Generator_ColumnPropNameInRow="PaymentType" msprop:Generator_ColumnPropNameInTable="PaymentTypeColumn" msprop:Generator_UserColumnName="PaymentType" type="xs:int" minOccurs="0" />
+              <xs:element name="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" msprop:Generator_UserColumnName="Remark" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ExpenceDate" msprop:Generator_ColumnVarNameInTable="columnExpenceDate" msprop:Generator_ColumnPropNameInRow="ExpenceDate" msprop:Generator_ColumnPropNameInTable="ExpenceDateColumn" msprop:Generator_UserColumnName="ExpenceDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CreateDate" msprop:Generator_ColumnVarNameInTable="columnCreateDate" msprop:Generator_ColumnPropNameInRow="CreateDate" msprop:Generator_ColumnPropNameInTable="CreateDateColumn" msprop:Generator_UserColumnName="CreateDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Fromdate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnFromdate" msprop:Generator_ColumnPropNameInRow="Fromdate" msprop:Generator_ColumnPropNameInTable="FromdateColumn" msprop:Generator_UserColumnName="Fromdate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Todate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTodate" msprop:Generator_ColumnPropNameInRow="Todate" msprop:Generator_ColumnPropNameInTable="TodateColumn" msprop:Generator_UserColumnName="Todate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SP_SelectExpenceDatewise" />
+      <xs:field xpath="mstns:ExpencesID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_SelectAllMemberAgeGroupReport" targetNamespace="http://tempuri.org/DS_SelectAllMemberAgeGroupReport.xsd" xmlns:mstns="http://tempuri.org/DS_SelectAllMemberAgeGroupReport.xsd" xmlns="http://tempuri.org/DS_SelectAllMemberAgeGroupReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FlockNoteConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FlockNoteConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FlockNote.Properties.Settings.GlobalReference.Default.FlockNoteConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_SelectAllMemberAgeGroupReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_SelectAllMemberAgeGroupReport" msprop:Generator_UserDSName="DS_SelectAllMemberAgeGroupReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SP_SelectAllMemberAgeGroupReport" msprop:Generator_TableClassName="SP_SelectAllMemberAgeGroupReportDataTable" msprop:Generator_TableVarName="tableSP_SelectAllMemberAgeGroupReport" msprop:Generator_TablePropName="SP_SelectAllMemberAgeGroupReport" msprop:Generator_RowDeletingName="SP_SelectAllMemberAgeGroupReportRowDeleting" msprop:Generator_RowChangingName="SP_SelectAllMemberAgeGroupReportRowChanging" msprop:Generator_RowEvHandlerName="SP_SelectAllMemberAgeGroupReportRowChangeEventHandler" msprop:Generator_RowDeletedName="SP_SelectAllMemberAgeGroupReportRowDeleted" msprop:Generator_UserTableName="SP_SelectAllMemberAgeGroupReport" msprop:Generator_RowChangedName="SP_SelectAllMemberAgeGroupReportRowChanged" msprop:Generator_RowEvArgName="SP_SelectAllMemberAgeGroupReportRowChangeEvent" msprop:Generator_RowClassName="SP_SelectAllMemberAgeGroupReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MemberID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnMemberID" msprop:Generator_ColumnPropNameInRow="MemberID" msprop:Generator_ColumnPropNameInTable="MemberIDColumn" msprop:Generator_UserColumnName="MemberID" type="xs:int" />
+              <xs:element name="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_UserColumnName="Title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_UserColumnName="FirstName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastName" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_UserColumnName="LastName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Gender" msprop:Generator_ColumnVarNameInTable="columnGender" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_UserColumnName="Gender" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DOB" msprop:Generator_ColumnVarNameInTable="columnDOB" msprop:Generator_ColumnPropNameInRow="DOB" msprop:Generator_ColumnPropNameInTable="DOBColumn" msprop:Generator_UserColumnName="DOB" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Age" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnAge" msprop:Generator_ColumnPropNameInRow="Age" msprop:Generator_ColumnPropNameInTable="AgeColumn" msprop:Generator_UserColumnName="Age" type="xs:int" minOccurs="0" />
+              <xs:element name="fromAge" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnfromAge" msprop:Generator_ColumnPropNameInRow="fromAge" msprop:Generator_ColumnPropNameInTable="fromAgeColumn" msprop:Generator_UserColumnName="fromAge" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="toAge" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columntoAge" msprop:Generator_ColumnPropNameInRow="toAge" msprop:Generator_ColumnPropNameInTable="toAgeColumn" msprop:Generator_UserColumnName="toAge" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SP_SelectAllMemberAgeGroupReport" />
+      <xs:field xpath="mstns:MemberID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

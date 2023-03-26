@@ -1,0 +1,89 @@
+Vehicle Setup-----------
+	Update Query
+
+create PROCEDURE [dbo].[SP_UpdateVehicle] 
+@VehicleID int,
+@VehicleNumber varchar(50),
+@Model varchar(50),
+@Brand varchar(50),
+@Type varchar(50),
+@Active bit
+
+as
+
+begin
+
+UPDATE [Vehicle]
+
+SET
+[RegNo]=@VehicleNumber,
+[Model]=@Model,
+[Brand]=@Brand,
+[Type]=@Type,
+[Active]=@Active,
+[updatedate]=GETDATE()
+
+where
+[VehicleID]=@VehicleID
+
+end
+
+
+
+/////////////////////////////////////////////
+ALTER PROCEDURE [dbo].[SP_InsertRole] 
+@RoleName varchar(200),
+@RoleType varchar(200),
+@Active bit
+as
+
+begin
+
+INSERT INTO [Role]
+([RoleName],[RoleType],[Active],[createdate],[updatedate])
+values
+(
+@RoleName
+,@RoleType
+,@Active,
+GETDATE(),
+GETDATE())
+
+end
+/////////////////////////////////////////////////////
+ALTER PROCEDURE [dbo].[SP_SearchRole] 
+@RoleName varchar(100)
+
+as
+
+begin
+
+SELECT     RoleID, RoleName, RoleType, Active, createdate, updatedate
+FROM         Role
+where RoleName LIKE '%' + @RoleName + '%'
+
+
+
+
+end
+//////////////////////////////////////////////////
+ALTER PROCEDURE [dbo].[SP_UpdateRole] 
+@RoleID varchar(50),
+@RoleName varchar(200),
+@RoleType varchar(200),
+@Active bit
+as
+
+begin
+
+UPDATE [Role]
+
+SET
+[RoleName]=@RoleName,
+[RoleType]=@RoleType,
+[Active]=@Active,
+[updatedate]=GETDATE()
+where
+[RoleID]=@RoleID
+
+end

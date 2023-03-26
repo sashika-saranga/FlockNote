@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_SelectBirthDayReportDaterange" targetNamespace="http://tempuri.org/DS_SelectBirthDayReportDaterange.xsd" xmlns:mstns="http://tempuri.org/DS_SelectBirthDayReportDaterange.xsd" xmlns="http://tempuri.org/DS_SelectBirthDayReportDaterange.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FlockNoteConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FlockNoteConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FlockNote.Properties.Settings.GlobalReference.Default.FlockNoteConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_SelectBirthDayReportDaterange" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_SelectBirthDayReportDaterange" msprop:Generator_UserDSName="DS_SelectBirthDayReportDaterange">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SP_SelectBirthDayReportDaterange" msprop:Generator_TableClassName="SP_SelectBirthDayReportDaterangeDataTable" msprop:Generator_TableVarName="tableSP_SelectBirthDayReportDaterange" msprop:Generator_TablePropName="SP_SelectBirthDayReportDaterange" msprop:Generator_RowDeletingName="SP_SelectBirthDayReportDaterangeRowDeleting" msprop:Generator_RowChangingName="SP_SelectBirthDayReportDaterangeRowChanging" msprop:Generator_RowEvHandlerName="SP_SelectBirthDayReportDaterangeRowChangeEventHandler" msprop:Generator_RowDeletedName="SP_SelectBirthDayReportDaterangeRowDeleted" msprop:Generator_UserTableName="SP_SelectBirthDayReportDaterange" msprop:Generator_RowChangedName="SP_SelectBirthDayReportDaterangeRowChanged" msprop:Generator_RowEvArgName="SP_SelectBirthDayReportDaterangeRowChangeEvent" msprop:Generator_RowClassName="SP_SelectBirthDayReportDaterangeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MemberID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnMemberID" msprop:Generator_ColumnPropNameInRow="MemberID" msprop:Generator_ColumnPropNameInTable="MemberIDColumn" msprop:Generator_UserColumnName="MemberID" type="xs:int" />
+              <xs:element name="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_UserColumnName="Title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_UserColumnName="FirstName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastName" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_UserColumnName="LastName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Gender" msprop:Generator_ColumnVarNameInTable="columnGender" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_UserColumnName="Gender" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DOB" msprop:Generator_ColumnVarNameInTable="columnDOB" msprop:Generator_ColumnPropNameInRow="DOB" msprop:Generator_ColumnPropNameInTable="DOBColumn" msprop:Generator_UserColumnName="DOB" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="City" msprop:Generator_ColumnVarNameInTable="columnCity" msprop:Generator_ColumnPropNameInRow="City" msprop:Generator_ColumnPropNameInTable="CityColumn" msprop:Generator_UserColumnName="City" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Age" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnAge" msprop:Generator_ColumnPropNameInRow="Age" msprop:Generator_ColumnPropNameInTable="AgeColumn" msprop:Generator_UserColumnName="Age" type="xs:int" minOccurs="0" />
+              <xs:element name="fromDate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnfromDate" msprop:Generator_ColumnPropNameInRow="fromDate" msprop:Generator_ColumnPropNameInTable="fromDateColumn" msprop:Generator_UserColumnName="fromDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="toDate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columntoDate" msprop:Generator_ColumnPropNameInRow="toDate" msprop:Generator_ColumnPropNameInTable="toDateColumn" msprop:Generator_UserColumnName="toDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="createdate" msprop:Generator_ColumnVarNameInTable="columncreatedate" msprop:Generator_ColumnPropNameInRow="createdate" msprop:Generator_ColumnPropNameInTable="createdateColumn" msprop:Generator_UserColumnName="createdate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SP_SelectBirthDayReportDaterange" />
+      <xs:field xpath="mstns:MemberID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
